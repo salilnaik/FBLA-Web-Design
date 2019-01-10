@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>Intro</title>
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+	background-color: #9c9d9e;
+}
+h1{
+	font-size: 40px;
+	font-family: engravers mt;
+	position: absolute;
+	top: 43%;
+	left: 20%;
+	animation-name: head;
+	animation-duration:2s;
+	animation-delay:2s;
+}
+#a1{font-size:20px;position:absolute;left:16%;top:50%;animation-name:move1;animation-duration:2s;animation-delay:2s;}
+#a2{font-size:40px;position:absolute;left:17%;top:48.5%;animation-name:move2;animation-duration:2s;animation-delay:2s;}
+#a3{font-size:60px;position:absolute;left:43%;top: 46.5%;animation-name:move3;animation-duration:2s;animation-delay:2s;}
+#a4{font-size:80px;position:absolute;left:45%;top:45%;animation-name:move4;animation-duration:2s;animation-delay:2s;}
+
+@keyframes move1 {
+    55%  {left: 6%;}
+    100% {left: 106%;}
+}
+@keyframes move2{
+	55% {left:7%;}
+	100% {left:107%;}
+}
+@keyframes move3{
+	55% {left:33%;}
+	100% {left:133%;}
+}
+@keyframes move4{
+	55% {left:35%;}
+	100% {left:135%;}
+}
+@keyframes head{
+	55% {left:10%;}
+	100% {left:110%;}
+}
+</style>
+</head>
+<body>
+<div>
+<i class="material-icons" id="a1">keyboard_arrow_right</i>
+<i class="material-icons" id="a2">keyboard_arrow_right</i>
+<h1>Accuracy</h1>
+<i class="material-icons" id="a3">keyboard_arrow_right</i>
+<i class="material-icons" id="a4">keyboard_arrow_right</i>
+</div>
+<script>
+document.getElementById("a1").addEventListener("webkitAnimationEnd", end);
+document.getElementById("a1").addEventListener("animationend", end);
+function end(){
+	window.location.href="home.html"
+}
+</script>
+</body>
+</html>
